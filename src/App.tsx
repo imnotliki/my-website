@@ -368,7 +368,7 @@ export default function App() {
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-[20%] left-[15%] w-64 h-80 rounded-[4rem] overflow-hidden opacity-20 grayscale"
           >
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600&h=800" alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <img src="/images/placeholders/tech-circuit.jpg" alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </motion.div>
           <motion.div 
             animate={{ 
@@ -378,7 +378,7 @@ export default function App() {
             transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
             className="absolute bottom-[20%] right-[10%] w-72 h-96 rounded-[5rem] overflow-hidden opacity-20 grayscale"
           >
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600&h=800" alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <img src="/images/placeholders/portrait-placeholder.jpg" alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </motion.div>
         </div>
 
@@ -405,7 +405,7 @@ export default function App() {
               alt="Su Zhenyao" 
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               onError={(e) => {
-                e.currentTarget.src = "https://storage.googleapis.com/static.vusercontent.net/images/ais-dev-xi3yzdmsivmjxlpghmt7sk-118786349601.asia-southeast1.run.app/portrait.jpg";
+                e.currentTarget.src = "/images/placeholders/portrait-placeholder.jpg";
               }}
               referrerPolicy="no-referrer"
             />
@@ -502,7 +502,7 @@ export default function App() {
                   {/* Base Layer: Pathology Slide */}
                   <div className="absolute inset-0 opacity-60 group-hover:opacity-40 transition-opacity duration-700">
                     <img 
-                      src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800&h=600" 
+                      src="/images/placeholders/medical-cells.jpg" 
                       className="w-full h-full object-cover grayscale"
                     />
                   </div>
@@ -681,7 +681,7 @@ export default function App() {
                       whileHover={{ scale: 1.1, borderColor: 'rgba(124, 58, 237, 0.6)' }}
                     >
                       <img 
-                        src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=200&h=200" 
+                        src="/images/placeholders/street-traffic.jpg" 
                         alt="Hardware"
                         className="w-full h-full object-cover opacity-90" 
                       />
@@ -868,10 +868,10 @@ export default function App() {
               ) : null;
 
               const projectPlaceholders = [
-                'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800&h=600', // AI Healthcare
-                'https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=800&h=600', // IoT Smart City
-                'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800&h=600', // Robotics
-                'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600', // Tech
+                '/images/placeholders/medical-cells.jpg', // AI Healthcare
+                '/images/placeholders/smart-city.jpg', // IoT Smart City
+                '/images/placeholders/robotics.jpg', // Robotics
+                '/images/placeholders/tech-circuit.jpg', // Tech
               ];
 
               return (
